@@ -26,11 +26,11 @@ def fill_rect(x, y, width, height, color:Color):
     #    for j in range(x, xx):
     #        window[i][j] = color
     can.create_rectangle(x, y, x+width, y+height, fill=color.hex, outline='', dash='')
-    #can.update()
+    can.update()
 
 def draw_string(text, x, y):
     can.create_text(x, y, text=text, anchor="nw")
-    #can.update()
+    can.update()
 
 def set_pixel(x, y, color:Color):
     #window[y][x] = color
